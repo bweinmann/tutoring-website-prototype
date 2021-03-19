@@ -1,3 +1,4 @@
+/* Master Styles */
 body {
     margin: 0px;
 }
@@ -7,6 +8,7 @@ body {
     grid-template-columns: 1fr;
 }
 
+/* Nav Styles */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -41,4 +43,69 @@ body {
 
 .nav-link-wrapper a:hover {
     color: black;
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper img {
+    opacity: 0.5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.logo-wrapper:hover img {
+   opacity: 1.0;
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;  
+}
+
+/*Needs to be more specific with selector */
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: black;
+}
+
+.img-lighten {
+    transition: 1s;
+    filter: brightness(20%)
 }
